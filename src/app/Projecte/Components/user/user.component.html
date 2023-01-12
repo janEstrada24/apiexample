@@ -24,4 +24,11 @@
         <td>{{user.gender}}</td>
         <td>{{user.status}}</td>
     </tr>
+    <tr>
+        <td><button (click)="guardar()">Guarda</button></td>
+        <td><input type="text" (ngModel)="this.user.name"> </td>
+        <td><input type="text" (ngModel)="this.user.email"> </td>
+        <td><input type="text" (ngModel)="this.user.gender"> </td>
+        <td><input type="text" (ngModel)="this.user.status"> </td>
+    </tr>
 </table>
